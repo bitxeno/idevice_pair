@@ -2506,9 +2506,9 @@ checksum = "3d3067d79b975e8844ca9eb072e16b31c3c1c36928edf9c6789548c524d0d954"
 
 [[package]]
 name = "idevice"
-version = "0.1.58"
+version = "0.1.59"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "066aab61e525fdc6181ae32bf88d535a1eae8462e3e190516ec15a863f5926cd"
+checksum = "33caa95bc58ce8809b6e00a377f4b83b29ca34e1fdbbf73dba7cd0c59dba738f"
 dependencies = [
  "aes",
  "async-stream 0.3.6",
@@ -2526,6 +2526,7 @@ dependencies = [
  "indexmap",
  "jktcp",
  "json",
+ "libc",
  "plist",
  "plist-macro",
  "rand 0.10.1",
@@ -2536,11 +2537,13 @@ dependencies = [
  "serde_json",
  "sha1",
  "sha2",
+ "siphasher",
  "thiserror 2.0.18",
  "tokio",
  "tokio-rustls",
  "tracing",
  "uuid",
+ "web-time",
  "x25519-dalek",
  "x509-cert",
 ]
@@ -2561,7 +2564,7 @@ dependencies = [
 
 [[package]]
 name = "idevice_pair"
-version = "0.1.12"
+version = "0.1.13"
 dependencies = [
  "eframe",
  "egui",
